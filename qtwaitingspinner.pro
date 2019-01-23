@@ -1,11 +1,16 @@
 QT += widgets
 
 TEMPLATE = lib
-CONFIG += staticlib
+CONFIG += staticlib c++14
 TARGET = qtwaitingspinner
 
 SOURCES += \
-    waitingspinnerwidget.cpp
+    waitingspinnerwidget.cpp \
+    waitingspinnerdialog.cpp
     
 HEADERS += \
-    waitingspinnerwidget.h
+    waitingspinnerwidget.h \
+    waitingspinnerdialog.cpp
+
+FORMS += \
+    waitingspinnerdialog.ui
